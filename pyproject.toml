@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-classifier"
+version = "1.0.0"
+description = "Project Classifier - AI Mentor for Automated Project Planning"
+requires-python = ">=3.8"
+dependencies = [
+    "flask==3.0.0",
+    "flask-cors==4.0.0",
+    "google-generativeai==0.4.1",
+    "python-dotenv==1.0.0",
+    "gunicorn==21.2.0",
+]
+
+[tool.vercel]
+entrypoint = "app.py"
